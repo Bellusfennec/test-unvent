@@ -1,0 +1,190 @@
+.nav {
+  margin-top: 2.188vw;
+}
+.nav > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.188vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav > ul > li > a {
+  text-transform: uppercase;
+  font-family: "UniNeueBold";
+  font-size: 0.885vw;
+  padding: 0.521vw;
+}
+.nav > ul > li > a:hover {
+  color: rgb(52, 91, 165);
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 16.667vw;
+    min-width: 16.667vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: -16.667vw;
+    padding: 0.781vw 1.042vw;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+    background: white;
+    z-index: 2000;
+  }
+  .nav-toggle {
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+    padding: 0.417vw;
+    background: none;
+    border: #ccc 1px solid;
+    color: #282728;
+    cursor: pointer;
+    font-size: 0.938vw;
+    line-height: 1;
+    z-index: 2001;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
+  }
+
+  /* определяем текст кнопки 
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+  .nav-toggle:after {
+    content: "\2630";
+    text-decoration: none;
+  }
+  .nav-toggle:hover {
+    color: #fe5851;
+  }
+  [id="nav-toggle"] {
+    position: absolute;
+    display: none;
+  }
+  /**
+ * изменение положения переключателя 
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+  [id="nav-toggle"]:checked ~ .nav > .nav-toggle {
+    position: absolute;
+    left: auto;
+    right: 0.104vw;
+    top: 0.833vw;
+  }
+  /**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+  [id="nav-toggle"]:checked ~ .nav {
+    left: 0;
+    box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+  }
+  [id="nav-toggle"]:checked ~ .nav > .nav-toggle:after {
+    content: "\2715";
+  }
+  body {
+    -webkit-animation: bugfix infinite 1s;
+  }
+  @-webkit-keyframes bugfix {
+    to {
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 320px) {
+    html,
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    html,
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .nav {
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+  .nav > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .nav > ul > li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
+    -moz-transition: opacity 0.5s 0.1s, -moz-transform 0.5s 0.1s;
+    -ms-transition: opacity 0.5s 0.1s, -ms-transform 0.5s 0.1s;
+    transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;
+  }
+  [id="nav-toggle"]:checked ~ .nav > ul > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .nav > ul > li:nth-child(2) {
+    -webkit-transition: opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
+    transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
+  }
+  .nav > ul > li:nth-child(3) {
+    -webkit-transition: opacity 0.5s 0.3s, -webkit-transform 0.5s 0.3s;
+    transition: opacity 0.5s 0.3s, transform 0.5s 0.3s;
+  }
+  .nav > ul > li:nth-child(4) {
+    -webkit-transition: opacity 0.5s 0.4s, -webkit-transform 0.5s 0.4s;
+    transition: opacity 0.5s 0.4s, transform 0.5s 0.4s;
+  }
+  .nav > ul > li:nth-child(5) {
+    -webkit-transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
+  }
+  .nav > ul > li:nth-child(6) {
+    -webkit-transition: opacity 0.5s 0.6s, -webkit-transform 0.5s 0.6s;
+    transition: opacity 0.5s 0.6s, transform 0.5s 0.6s;
+  }
+  .nav > ul > li:nth-child(7) {
+    -webkit-transition: opacity 0.5s 0.7s, -webkit-transform 0.5s 0.7s;
+    transition: opacity 0.5s 0.7s, transform 0.5s 0.7s;
+  }
+  .nav > ul > li:nth-child(8) {
+    -webkit-transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
+    transition: opacity 0.5s 0.8s, transform 0.5s 0.8s;
+  }
+  .nav > ul > li:nth-child(9) {
+    -webkit-transition: opacity 0.5s 0.9s, -webkit-transform 0.5s 0.9s;
+    transition: opacity 0.5s 0.9s, transform 0.5s 0.9s;
+  }
+  .nav > ul > li > a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    -webkit-transition: color 0.5s ease, padding 0.5s ease;
+    -moz-transition: color 0.5s ease, padding 0.5s ease;
+    transition: color 0.5s ease, padding 0.5s ease;
+  }
+  .nav > ul > li > a:hover,
+  .nav > ul > li > a:focus {
+    padding-left: 0.781vw;
+  }
+}

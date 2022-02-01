@@ -1,0 +1,316 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 0.833vw;
+  font-family: "UniNeueRegular"; /* "Roboto", "Arial", sans-serif */
+  color: #282728;
+}
+a {
+  text-decoration: none;
+  color: #282728;
+}
+a:hover {
+  color: #fe5851;
+}
+.container {
+  width: 81.823vw;
+  /* width: calc((var(--width-xl) / 1571.002px) * 1%); */
+  margin: auto;
+}
+.header {
+  display: flex;
+  margin-top: 2.083vw;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+}
+.header__logo img {
+  width: 9.531vw;
+}
+.header__logo-text {
+  margin-left: 1.823vw;
+  font-size: 0.938vw;
+  width: 16.406vw;
+  line-height: 1.29;
+  letter-spacing: 0.04rem;
+}
+.header__logo-text span {
+  font-family: "UniNeueBold";
+}
+.header__navigation {
+  display: flex;
+}
+.header__navigation-map {
+  position: relative;
+}
+.header__navigation-background {
+  width: 4.01vw;
+}
+.header__navigation-mark {
+  width: 1.25vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__navigation-text {
+  width: 7.813vw;
+  margin: 0.573vw;
+  letter-spacing: 0.05rem;
+}
+.header__navigation-text span {
+  font-family: "UniNeueBold";
+}
+.header__advice {
+  position: relative;
+}
+.header__advice a {
+  display: block;
+  transition: 0.3s;
+  background: #313d4b;
+  width: 12.76vw;
+  height: 3.698vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.521vw;
+}
+.header__advice a:hover {
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(49, 61, 75, 0.35);
+  -moz-box-shadow: 0px 5px 15px 5px rgba(49, 61, 75, 0.35);
+  box-shadow: 0px 5px 15px 5px rgba(49, 61, 75, 0.35);
+}
+.header__contact-telephone {
+  position: relative;
+  bottom: 0.521vw;
+}
+.header__contact-telephone img {
+  width: 0.833vw;
+}
+.header__contact-telephone span {
+  font-family: "UniNeueHeavy";
+  font-size: 1.198vw;
+  letter-spacing: 0.001rem;
+}
+.header__contact-messanger {
+  position: relative;
+  bottom: 0.365vw;
+  display: flex;
+}
+.header__contact-messanger a {
+  position: relative;
+  margin-left: 0.469vw;
+  transition: 0.3s;
+}
+.header__contact-messanger a:hover {
+  transform: scale(1.1);
+}
+.header__contact-messanger a:first-child {
+  position: relative;
+  margin-left: 1.563vw;
+}
+.header__contact-messanger img:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-45%, -65%);
+}
+.header__contact-background {
+  width: 2.604vw;
+}
+.header__contact-icon {
+  width: 0.938vw;
+}
+/* .nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.188vw;
+}
+.nav-desktop__item a {
+  text-transform: uppercase;
+  font-family: "UniNeueBold";
+  font-size: 0.885vw;
+  padding: 10xp;
+}
+.nav-desktop__item a:hover {
+  color: darkcyan;
+} */
+.main {
+  position: relative;
+}
+.main__company {
+  margin-top: 4.323vw;
+}
+.main__h1 {
+  font-family: "UniNeueBold";
+  font-size: 3.125vw;
+  width: 44.271vw;
+  line-height: 1.14;
+}
+.main__h1 span {
+  font-family: "UniNeueRegular";
+}
+.main__bullet {
+  display: flex;
+  margin-top: 3.646vw;
+  justify-content: space-between;
+  width: 45.313vw;
+}
+.main__bullet-item {
+  position: relative;
+  display: flex;
+  width: 15.625vw;
+  align-items: flex-start;
+}
+.main__bullet-item:nth-child(1) {
+  width: 16.927vw;
+}
+.main__bullet-item:nth-child(2) {
+  width: 11.979vw;
+}
+.main__bullet-item:nth-child(3) {
+  width: 11.979vw;
+}
+.main__bullet-item img {
+  align-self: flex-start;
+  position: relative;
+  bottom: 0.417vw;
+  width: 1.198vw;
+}
+.main__bullet-text {
+  font-size: 1.042vw;
+  margin-left: 0.573vw;
+  line-height: 1.2;
+}
+.main__bullet-text span {
+  font-family: "UniNeueHeavy";
+}
+.main__bullet-number {
+  font-size: 3.75vw;
+  align-self: flex-start;
+  font-family: "UniNeueHeavy";
+  position: relative;
+  bottom: 0.781vw;
+}
+.main__calculate-licenses {
+  margin-top: 2.969vw;
+  display: flex;
+}
+.main__calculate-text {
+  font-size: 0.938vw;
+  margin-left: 1.094vw;
+  line-height: 1.5;
+}
+.main__calculate-discount {
+  position: relative;
+}
+.main__calculate-discount img {
+  position: absolute;
+  bottom: -0.365vw;
+  left: 0.052vw;
+  width: 9.844vw;
+}
+.main__calculate-discount span {
+  position: relative;
+  left: 0.521vw;
+}
+.main__calculate-button {
+  position: relative;
+  margin-top: 1.198vw;
+  right: 0.208vw;
+  display: block;
+  background: #fe5c54;
+  width: 22.448vw;
+  height: 5.573vw;
+  border-radius: 0.521vw;
+  transition: 0.3s;
+}
+.main__calculate-button:hover {
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(254, 92, 84, 0.35);
+  -moz-box-shadow: 0px 5px 15px 5px rgba(254, 92, 84, 0.35);
+  box-shadow: 0px 5px 15px 5px rgba(254, 92, 84, 0.35);
+}
+.main__calculate-icon {
+  width: 1.979vw;
+}
+.main__calculate-background {
+  width: 22.448vw;
+}
+.main__calculate-button div {
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 22.448vw;
+  height: 5.573vw;
+  background: none;
+}
+.main__calculate-button > div > img {
+  font-size: 0.99vw;
+}
+.main__calculate-button > div > span {
+  text-transform: uppercase;
+  font-size: 0.938vw;
+  color: white;
+  font-family: "UniNeueBold";
+  margin-left: 0.938vw;
+  display: block;
+}
+.main__licenses {
+  margin-top: 1.875vw;
+  width: 20.833vw;
+  margin-left: 2.448vw;
+}
+.main__licenses-text {
+  display: flex;
+  justify-content: center;
+  font-family: "UniNeueBold";
+  font-size: 0.885vw;
+}
+.main__licenses-items {
+  margin-top: 0.885vw;
+  display: flex;
+  justify-content: center;
+}
+.main__licenses-arrows {
+  width: 0.677vw;
+}
+.main__licenses-arrows {
+  visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  .main__licenses-arrows {
+    visibility: visible;
+  }
+}
+.main__licenses-arrows:first-of-type {
+  align-self: center;
+  margin-right: 0;
+}
+.main__licenses-arrows:last-of-type {
+  align-self: center;
+  margin-left: 0.781vw;
+}
+.main__licenses-item {
+  margin-left: 0.833vw;
+  width: 4.74vw;
+}
+.background .main__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100vw;
+}
+section {
+  padding-top: 500px;
+}
