@@ -1,17 +1,20 @@
 @font-face {
   font-family: "UniNeueRegular";
   src: local("UniNeueRegular"),
-    url("assets/fonts/UniNeueRegular.ttf") format("truetype");
+    url("/assets/fonts/UniNeueRegular.ttf") format("truetype"),
+    url("/test-unvent/assets/fonts/UniNeueRegular.ttf") format("truetype");
 }
 @font-face {
   font-family: "UniNeueBold";
   src: local("UniNeueBold"),
-    url("assets/fonts/UniNeueBold.ttf") format("truetype");
+    url("/assets/fonts/UniNeueRegular.ttf") format("truetype"),
+    url("/test-unvent/assets/fonts/UniNeueBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "UniNeueHeavy";
   src: local("UniNeueHeavy"),
-    url("assets/fonts/UniNeueHeavy.ttf") format("truetype");
+    url("/assets/fonts/UniNeueRegular.ttf") format("truetype"),
+    url("/test-unvent/assets/fonts/UniNeueHeavy.ttf") format("truetype");
 }
 
 /**/
